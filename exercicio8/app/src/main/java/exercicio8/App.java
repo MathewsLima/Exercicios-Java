@@ -10,12 +10,12 @@ public class App {
     public static void main(String[] args) {
     Scanner leitoScanner = new Scanner(System.in);
     
-    System.out.println("Digite quantos dólares você possue: ");
-    float real = leitoScanner.nextFloat();
     System.out.println("Digite a cotação do real:");
+    float real = leitoScanner.nextFloat();
+    System.out.println("Digite quantos dólares você possue: ");
     float dolar = leitoScanner.nextFloat();
 
-    float cotacao = dolar / real;
+    float cotacao = real * dolar;
 
     System.out.println("De acordo com a cotação informada você possu R$" + cotacao);
 
