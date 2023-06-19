@@ -8,12 +8,12 @@ import java.util.Scanner;
 public class App {
     
     public static void main(String[] args) {
-    Scanner leitoScanner = new Scanner(System.in);
+    Scanner leitorScanner = new Scanner(System.in);
     
     System.out.println("Digite a cotação do real:");
-    float real = leitoScanner.nextFloat();
+    float real = leitorScanner.nextFloat();
     System.out.println("Digite quantos dólares você possue: ");
-    float dolar = leitoScanner.nextFloat();
+    float dolar = leitorScanner.nextFloat();
 
     float cotacao = real * dolar;
 
