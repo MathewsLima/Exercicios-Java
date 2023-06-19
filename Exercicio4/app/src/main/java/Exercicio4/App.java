@@ -6,12 +6,26 @@ efetuadas, informar o seu nome, o salário fixo e salário no final do mês;
  */
 package Exercicio4;
 
-public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+import java.util.Scanner;
 
+public class App {
+       
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        
+        Scanner leitor = new Scanner(System.in);
+        
+        System.out.println("Digite o nome do vendedor:");
+        String nomeVen = leitor.next();
+        System.out.println("Digite o sálario base:");
+        float sBase = leitor.nextFloat();
+        System.out.println("Digite o total de vendas:");
+        int vendas = leitor.nextInt();
+        
+        float comissao = (15 * vendas) / 100;
+        float salarioFinal = sBase + comissao;
+        
+        System.out.println("O vendedor " + nomeVen + " com o salário base"
+                + " de R$ " + sBase + " com base na quantidade de vendas"
+                        + " esse mês o salário final será de R$" + salarioFinal);
     }
 }
