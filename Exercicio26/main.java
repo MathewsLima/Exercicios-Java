@@ -9,7 +9,7 @@ public class main {
 
      if(numero == 1){
         System.out.print("Um");
-     } else{
+     } else {
         if (numero == 2){
         System.out.print("Dois");
         } else {
